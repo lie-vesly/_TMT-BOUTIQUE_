@@ -1,0 +1,194 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: brown;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: brown;
+    padding: 15px 20px;
+    color: white;
+}
+
+.navbar .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    right: 100px;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+}
+
+/* Section Acheter */
+.section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.products {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    color: white;
+    background-color: brown;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+button {
+    background-color: white;
+    color: brown;
+    font-size: larger;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Commande */
+#commande-items {
+    margin-bottom: 20px;
+}
+
+#commande-items .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#commande-items .item button {
+    background-color: #e74c3c;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#commande-total {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#acheter-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 20px auto;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+/* Footer */
+footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
