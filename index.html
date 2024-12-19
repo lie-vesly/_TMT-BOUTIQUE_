@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMOTHEE MATETA Boutique</title>
+    <link rel="icon" type="image/png" href="TMT4.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="panier.html">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>TMT BOUTIQUE</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="boutique.html">Boutique</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <!-- Section Acheter -->
+    <section id="acheter" class="section">
+        <div class="container">
+            <h2>Achetez nos produits</h2>
+            <strong>Indications:</strong><h5>- Pour une bonne visibilité de la page, tourner votre téléphone (Mode paysage).<br>- Après avoir "ajouté au panier" vos articles, défiler jusqu'en bas puis cliquer sur le bouton "Acheter" pour discuter le (s) prix. <br>- Pour supprimer un article du panier, actualisez la page.</h5>
+            <div class="products">
+                <div class="product" id="brosse à dent">
+                    <img src="brosse.png" alt="Brosse à dent">
+                    <h3>Distributeur dentifrice avec organisateur de 5 brosses</h3>
+                    <p>Bon prix</p>
+                    <button class="add-to-cart" data-product="Brosse à dent" data-name="Brosse à dent" data-price="1" id="Brosse à dent">Ajouter au panier</button>
+
+                           
+
+                </div>
+                <div class="product">
+                    <img src="clé.jpg" alt="clé USB">
+                    <h3>Clé USB 2.0 en forme de stylo plume 16 Go</h3>
+                    <p>Bon prix</p>
+                    <button class="add-to-cart" data-product="Clé USB" data-name="Clé USB" data-price="1">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="chargeur.png" alt="Multi Chargeur Câble USB (B/C/IOS)" class="stylo">
+                    <h3>Multi Chargeur Câble USB (B/C/IOS)</h3>
+                    <p>Bon prix</p>
+                    <button class="add-to-cart" data-product="Multi Chargeur Câble USB (B/C/IOS)" data-name="Multi Chargeur Câble USB (B/C/IOS)" data-price="1">Ajouter au panier</button>
+                </div>
+
+                <div class="product">
+                    <img src="capodasque.png" alt="Capodastre Guitare">
+                    <h3>Capodastre <br>Guitare</h3>
+                    <p>Bon prix</p>
+                    <button class="add-to-cart" data-product="Capodastre Guitare" data-name="Capodastre Guitare" data-price="1">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="cintre.png" alt="Cintre à vêtements multiples">
+                    <h3>Cintre à vêtements multiples</h3>
+                    <p>Bon prix</p>
+                    <button class="add-to-cart" data-product="Cintre à vêtements multiples" data-name="Cintre à vêtements multiples" data-price="1">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="colier.png" alt="Ensemble Montre-Bracelet">
+                    <h3>Ensemble <br>Montre-Bracelet
+                    </h3>
+                    <p>Bon prix</p>
+                    <button class="add-to-cart" data-product="Ensemble Montre-Bracelet" data-name="Ensemble Montre-Bracelet" data-price="1">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="brosses.png" alt="Brosses à dents souples pour adulte">
+                    <h3>Brosses à dent souples pour adulte</h3>
+                    <p>Bon prix</p>
+                    <button class="add-to-cart" data-product="Brosses à dent souples pour adulte" data-name="Brosses à dent souples pour adulte" data-price="1">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="sv.png" alt="Lot de 3 boxers pour hommes de marque HG">
+                    <h3>Lot de 3 boxers pour hommes de marque HG</h3>
+                    <p>Bon prix</p>
+                    <button class="add-to-cart" data-product="Lot de 3 boxers pour hommes de marque HG" data-name="Lot de 3 boxers pour hommes de marque HG" data-price="1">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+</header>
+
+<section id="commande" class="section">
+<div class="container">
+    <h2>Votre Commande</h2>
+    <div id="commande-items"></div>
+    <div id="commande-total"> 
+        <p>Total : <span id="total-price">0 CFA</span></p>
+    </div>
+    <button id="acheter-btn">Acheter</button>
+</div>
+</section>
+
+<div class="hamburger" id="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+</nav>
+</header>
+
+<section id="contacter" class="section">
+<div class="container">
+<h2>Contactez-nous</h2>
+<p>Besoin d'aide ? Contactez-nous via WhatsApp.</p>
+<a href="https://wa.me/+242040590093" target="_blank" class="whatsapp-button">Contacter via WhatsApp</a>
+</div>
+</section>
+
+    <footer>
+        <p>&copy; Décembre 2024 TMT Boutique - Tous droits réservés - &copyLie_Vesly</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
